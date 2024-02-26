@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS Starts Here */
+.bg-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #42b883, #42b883, #0ebbd2, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.absolute.inset-0.bg-gradient {
+  border-radius: 18px;
+}
+
+.heading-primary em {
+  --tw-gradient-from: #42b883 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgba(66,184,131,0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+  --tw-gradient-to: #0ebbd2 var(--tw-gradient-to-position);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right,var(--tw-gradient-stops));
+  color: transparent;
+  font-style: normal;
+}
+
+.text-body-gray {
+  --tw-text-opacity: 1;
+  color: rgb(151 159 173/var(--tw-text-opacity));
+}
+
+.bg-dark-gunmetal {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 37 41/var(--tw-bg-opacity));
+}
+
+.text-mint {
+  --tw-text-opacity: 1;
+  color: rgb(66 184 131/var(--tw-text-opacity));
+}
