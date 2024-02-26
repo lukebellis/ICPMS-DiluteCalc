@@ -38,13 +38,9 @@ To get started with the ICP-MS Dilution Calculator:
 
 1.  Install Dependencies:
 
-    bashCopy code
-
     `npm install`
 
 2.  Run the Development Server:
-
-    bashCopy code
 
     `npm run serve`
 
@@ -52,15 +48,11 @@ To get started with the ICP-MS Dilution Calculator:
 
 3.  Build for Production:
 
-    bashCopy code
-
     `npm run build`
 
     Compiles and minifies the application for production deployment.
 
 4.  Lint and Fix Files:
-
-    bashCopy code
 
     `npm run lint`
 
